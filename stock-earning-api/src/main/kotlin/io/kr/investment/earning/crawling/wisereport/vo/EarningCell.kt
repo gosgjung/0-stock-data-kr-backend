@@ -1,41 +1,39 @@
 package io.kr.investment.earning.crawling.wisereport.vo
 
 import com.fasterxml.jackson.annotation.JsonProperty
+import com.google.gson.annotations.SerializedName
 
 data class EarningCell(
-    @JsonProperty("YYMM") val yymm: String,
+    @JsonProperty("YYMM") @SerializedName("YYMM") val yymm: String,
 
-    @JsonProperty("SALES") val sales: String,
+    @JsonProperty("SALES") @SerializedName("SALES") val sales: String,
 
-    @JsonProperty("YOY") val yoy: String,
+    @JsonProperty("YOY") @SerializedName("YOY") val yoy: String,
 
-    @JsonProperty("OP") val op: String,
+    @JsonProperty("OP") @SerializedName("OP") val op: String,
 
-    @JsonProperty("NP") val np: String,
+    @JsonProperty("NP") @SerializedName("NP") val np: String,
 
-    @JsonProperty("EPS") val eps: String,
+    @JsonProperty("EPS") @SerializedName("EPS") val eps: String,
 
-    @JsonProperty("BPS") val bps: String,
+    @JsonProperty("BPS") @SerializedName("BPS") val bps: String,
 
-    @JsonProperty("PER") val per: String,
+    @JsonProperty("PER") @SerializedName("PER") val per: String,
 
-    @JsonProperty("PBR") val pbr: String,
+    @JsonProperty("PBR") @SerializedName("PBR") val pbr: String,
 
-    @JsonProperty("ROE") val roe: String,
+    @JsonProperty("ROE") @SerializedName("ROE") val roe: String,
 
-    @JsonProperty("EV") val ev: String,
+    @JsonProperty("EV") @SerializedName("EV") val ev: String,
 
-    @JsonProperty("MAIN") val main: String,
+    @JsonProperty("MAIN") @SerializedName("MAIN") val main: String,
 
-    @JsonProperty("TOP_ROW") val topRow: String,
+    @JsonProperty("TOT_ROW") @SerializedName("TOT_ROW") val totRow: Int,
 
-    @JsonProperty("SALES_TIP") val salesTip: String,
+    @JsonProperty("SALES_TIP") @SerializedName("SALES_TIP") val salesTip: String,
 
-    @JsonProperty("OP_TIP") val opTip: String,
+    @JsonProperty("OP_TIP") @SerializedName("OP_TIP") val opTip: String,
 
-    @JsonProperty("NP_TIP") val npTip: String
+    @JsonProperty("NP_TIP") @SerializedName("NP_TIP") val npTip: String
 ){
-    fun toEarning(){
-
-    }
 }

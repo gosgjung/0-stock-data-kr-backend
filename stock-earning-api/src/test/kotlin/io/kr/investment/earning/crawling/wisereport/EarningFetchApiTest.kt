@@ -4,6 +4,8 @@ import io.kr.investment.earning.crawling.wisereport.application.WisereportApiCra
 import io.kr.investment.earning.crawling.wisereport.type.DataType
 import io.kr.investment.earning.crawling.wisereport.type.PeriodType
 import kotlinx.coroutines.runBlocking
+import org.hamcrest.CoreMatchers.not
+import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Qualifier
@@ -20,7 +22,7 @@ class EarningFetchApiTest @Autowired constructor(
         runBlocking {
             val crawler = WisereportApiCrawler(webClient)
             val r = crawler.fetchEarningApi(ticker = "005930", dataType = DataType.EARNING, periodType = PeriodType.QUARTER)
-            println(r)
+            assertThat(r.jsonData, not(emptyList()))
         }
     }
 

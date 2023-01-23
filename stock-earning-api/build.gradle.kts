@@ -19,6 +19,8 @@ dependencies {
 	implementation("org.springframework.kafka:spring-kafka")
 	// jackson
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	//gson
+	implementation("com.google.code.gson:gson:2.8.9")
 	// selenium
 	implementation("org.seleniumhq.selenium:selenium-java:4.5.0")
 	implementation("org.seleniumhq.selenium:selenium-chrome-driver:4.5.0")
