@@ -1,0 +1,6 @@
+spring:
+  redis:
+    host: localhost
+    port: 26379
+dart:
+  file-name: CORPCODE.xml

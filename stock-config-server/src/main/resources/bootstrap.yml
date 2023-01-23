@@ -1,0 +1,19 @@
+encrypt:
+  key-store:
+    location: classpath:keystore/gmailSenderKey.jks
+    password: 111222
+    alias: gmailSenderKey
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        encrypt:
+          enabled: true
+        native:
+          search-locations:
+            - classpath:/config-properties
