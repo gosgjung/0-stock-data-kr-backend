@@ -3,4 +3,5 @@ spring:
     host: localhost
     port: 26379
 dart:
-  file-name: CORPCODE.xml
+  corp-code:
+    file-name: /corpcode/dart/CORPCODE.xml
