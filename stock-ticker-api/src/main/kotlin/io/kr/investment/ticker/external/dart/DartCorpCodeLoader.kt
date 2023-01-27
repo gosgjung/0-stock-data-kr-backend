@@ -1,6 +1,5 @@
-package io.kr.investment.ticker.external
+package io.kr.investment.ticker.external.dart
 
-import org.springframework.beans.factory.annotation.Value
 import org.springframework.core.io.ClassPathResource
 import org.springframework.stereotype.Component
 import org.w3c.dom.Node

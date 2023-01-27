@@ -1,4 +1,4 @@
-package io.kr.investment.ticker.external
+package io.kr.investment.ticker.external.dart
 
 data class DartCorpCodeDto(
     val stockCode: String,

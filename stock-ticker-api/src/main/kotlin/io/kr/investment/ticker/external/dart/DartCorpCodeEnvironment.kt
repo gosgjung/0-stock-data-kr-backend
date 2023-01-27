@@ -1,4 +1,4 @@
-package io.kr.investment.ticker.external
+package io.kr.investment.ticker.external.dart
 
 class DartCorpCodeEnvironment {
     companion object {
